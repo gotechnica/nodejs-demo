@@ -1,14 +1,15 @@
-
+const db = require("simple-dynamodb");
 
 module.exports.get_schedule = async event => {
-  const name = event.queryStringParameters.name || "test";
+
+  const result = await db.scanItems({
+    TableName: 'schedule-demo'
+  });
+
+  console.log(result.Items);
 
   return {
     statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Hello, ' + name
-      }
-    ),
+    body: JSON.stringify(result.Items)
   };
 };
