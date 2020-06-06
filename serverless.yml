@@ -21,5 +21,11 @@ functions:
       - http: 
           path: schedule
           method: get
+  get_event:
+    handler: handler.get_event
+    events:
+      - http: 
+          path: get_event
+          method: get
     
 
