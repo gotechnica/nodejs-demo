@@ -27,5 +27,11 @@ functions:
       - http: 
           path: get_event
           method: get
+  add_event:
+    handler: handler.add_event
+    events:
+      - http: 
+          path: add_event
+          method: post
     
 
