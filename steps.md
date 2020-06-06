@@ -27,6 +27,8 @@ Get your keys from the AWS console in IAM
 SERVICE_NAME should be something like `hugo-schedule`
 
 ### Deploy your serverless service
-
 `sls deploy`
+
+### Invoke your lambda function
+`sls invoke -f hello`
 
