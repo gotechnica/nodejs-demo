@@ -38,7 +38,7 @@ SERVICE_NAME should be something like `hugo-schedule`
 ### Add a new NPM package
 `npm i <PACKAGE_NAME>`
 
-### Add necessary npm packages
+### Add necessary npm packages for our tutorial
 `npm i aws-sdk`
 
 `npm i simple-dynamodb`
