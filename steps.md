@@ -1,4 +1,6 @@
 ### Version checks
+Download Node.js if you haven't already: https://nodejs.org/en/download/
+
 Check node version: `node -v` --> should be version 10 or greater
 
 Check npm version: `npm -v` --> this relies on your node version
