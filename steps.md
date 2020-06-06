@@ -37,3 +37,17 @@ SERVICE_NAME should be something like `hugo-schedule`
 
 ### Add a new NPM package
 `npm i <PACKAGE_NAME>`
+
+### Add necessary npm packages
+`npm i aws-sdk`
+
+`npm i simple-dynamodb`
+
+### Deploy a single function
+`sls deploy -f <FUNCTION_NAME>`
+
+### Tail the logs to debug
+`sls tail -f <FUNCTION_NAME>`
+
+### Deploy to a stage other than dev
+`sls deploy -s <STAGE>`
