@@ -10,7 +10,7 @@ Get your keys from the AWS console in IAM: https://console.aws.amazon.com/consol
 
 AWS Account ID: `724934931454`
 
-NOTE: Please be very careful with these keys - treat them like your social security number. Never commit them publicly to Github or share with anyone else. 
+**NOTE: Please be very careful with these keys - treat them like your social security number. Never commit them publicly to Github or share with anyone else.** 
 
 **For mac users:**
 
