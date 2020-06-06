@@ -18,6 +18,9 @@ Get your keys from the AWS console in IAM
 
 `set AWS_SECRET_ACCESS_KEY=<your-secret-key-here>`
 
+### Install the Serverless framework
+`npm i -g serverless`
+
 ### Create a new serverless service
 `serverless create --template aws-nodejs --name <SERVICE_NAME>`
 
