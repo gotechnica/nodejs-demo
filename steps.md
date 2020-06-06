@@ -8,6 +8,10 @@ Check npm version: `npm -v` (this relies on your node version)
 ### Set your AWS credentials in your terminal:
 Get your keys from the AWS console in IAM: https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin
 
+AWS Account ID: `724934931454`
+
+NOTE: Please be very careful with these keys - treat them like your social security number. Never commit them publicly to Github or share with anyone else. 
+
 **For mac users:**
 
 `export AWS_ACCESS_KEY_ID=<your-key-here>`
