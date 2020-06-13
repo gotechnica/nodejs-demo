@@ -36,7 +36,7 @@ SERVICE_NAME should be something like `hugo-schedule`
 `sls deploy`
 
 ### Invoke your lambda function
-`sls invoke -f hello`
+`sls invoke -f hello -d`
 
 ### Initialize NPM package
 `npm init -f`
