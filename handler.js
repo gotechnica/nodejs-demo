@@ -13,7 +13,7 @@ module.exports.get_schedule = async event => {
     body: JSON.stringify(result.Items)
   };
 };
-
+//puja terse
 module.exports.get_event = async event => {
   const id = event.queryStringParameters.id || "1";
 
