@@ -1,8 +1,8 @@
-service: schedule-puja
+service: hugo-schedule
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs10.x
   iamRoleStatements:
     - Effect: "Allow"
       Action:
@@ -14,7 +14,6 @@ provider:
        - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:us-east-1:*"
 
-
 functions:
   get_schedule:
     handler: handler.get_schedule
@@ -22,11 +21,15 @@ functions:
       - http: 
           path: schedule
           method: get
-
+  get_event:
+    handler: handler.get_event
+    events:
+      - http: 
+          path: get_event
+          method: get
   add_event:
     handler: handler.add_event
     events:
       - http: 
           path: add_event
           method: post
-    
