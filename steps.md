@@ -5,6 +5,9 @@ Check node version: `node -v` (should be version 10 or greater)
 
 Check npm version: `npm -v` (this relies on your node version)
 
+### Optional: Install JSON Formatter Chrome Extension
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
 ### Set your AWS credentials in your terminal:
 Get your keys from the AWS console in IAM: https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin
 
