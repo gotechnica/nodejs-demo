@@ -1,10 +1,10 @@
 {
-  "name": "nodejs-demo",
+  "name": "schedule-puja",
   "version": "1.0.0",
   "description": "",
   "main": "handler.js",
   "dependencies": {
-    "aws-sdk": "^2.691.0",
+    "aws-sdk": "^2.696.0",
     "simple-dynamodb": "^1.0.1"
   },
   "devDependencies": {},
