@@ -44,7 +44,16 @@ module.exports.add_event = async event => {
   });
 
   // Call DynamoDB to add the item to the table
-  const result = await ddb.putItem(params).promise();
+  const result = await ddb.putItem(params, 
+    function (err, data) {
+      if (err) {
+        // error occurred while trying to add item, fail request
+        console.log(err, err.stack);
+        return {statusCode: 500, body: "{}"}
+      } else {
+        console.log(data)
+      }
+    }).promise();
 
   return {
     statusCode: 200,
