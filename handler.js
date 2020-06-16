@@ -3,6 +3,7 @@ const AWS = require('aws-sdk');
 
 const TABLE_NAME = 'schedule-demo';
 
+// Function to get the schedule found in the `schedule-demo` table
 module.exports.get_schedule = async event => {
   const result = await db.scanItems({
     TableName: TABLE_NAME
@@ -14,6 +15,7 @@ module.exports.get_schedule = async event => {
   };
 };
 
+// Function to get a single event from the `schedule-demo` table
 module.exports.get_event = async event => {
   const id = event.queryStringParameters.id || "1";
 
@@ -28,6 +30,7 @@ module.exports.get_event = async event => {
   };
 };
 
+// Function to add an event to the `schedule-demo` table
 module.exports.add_event = async event => {
   const body = JSON.parse(event.body);
 
