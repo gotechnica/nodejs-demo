@@ -1,9 +1,8 @@
-service: hugo-schedule
-
+service: schedule-bchin1
 provider:
   name: aws
-  runtime: nodejs10.x
-  iamRoleStatements:
+  runtime: nodejs12.x
+  iamRoleStatements: ## Role statements that give certain access permissions into aws, we can also specify per function of which access goes to which
     - Effect: "Allow"
       Action:
        - dynamodb:Query
@@ -13,20 +12,13 @@ provider:
        - dynamodb:UpdateItem
        - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:us-east-1:*"
-
-functions:
-  get_schedule:
-    handler: handler.get_schedule
-    events:
+functions: ## Our functions
+  get_schedule: ## Function name
+    handler: handler.get_schedule ## Where the code lives
+    events: ## HTTP route
       - http: 
-          path: schedule
-          method: get
-  get_event:
-    handler: handler.get_event
-    events:
-      - http: 
-          path: get_event
-          method: get
+          path: schedule ## The path
+          method: get ## Type of request
   add_event:
     handler: handler.add_event
     events:
