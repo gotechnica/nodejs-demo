@@ -16,10 +16,13 @@ provider:
 
 functions:
   get_schedule:
+    #function name in handler file (where the code lives)
     handler: handler.get_schedule
+    #http route where people can access the information
     events:
-      - http: 
+      - http:
           path: schedule
+          #type of method
           method: get
   get_event:
     handler: handler.get_event
